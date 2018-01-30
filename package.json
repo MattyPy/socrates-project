@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
-    
     "autoprefixer-core": "~5.2.1",
     "connect-livereload": "~0.3.2",
     "cssnano": "~2.1.0",
@@ -14,8 +13,8 @@
     "grunt-sass": "~1.0.0",
     "load-grunt-tasks": "~3.2.0",
     "pixrem": "~1.3.1",
+    "ractive": "^0.9.11",
     "time-grunt": "~1.2.1"
-    
   },
   "engines": {
     "node": ">=0.8.0"
