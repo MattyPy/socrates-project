@@ -77,7 +77,12 @@
       {% endif %}
 
       {% block content %}
-        <p>Use this document as a way to quick start any new project.</p>
+              <p>Use this document as a way to quick start any new project.</p>
+	      <div id="target"></div>
+
+	      <script id="template" type="text/ractive">
+	       <p>{{greeting}}, {{name}}!</p>
+	      </script>
       {% endblock content %}
 
     </div> <!-- /container -->
