@@ -1,4 +1,6 @@
-{% load static i18n %}<!DOCTYPE html>
+{% load static i18n %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -78,11 +80,7 @@
 
       {% block content %}
               <p>Use this document as a way to quick start any new project.</p>
-	      <div id="target"></div>
-
-	      <script id="template" type="text/ractive">
 	       <p>{{greeting}}, {{name}}!</p>
-	      </script>
       {% endblock content %}
 
     </div> <!-- /container -->
@@ -103,6 +101,7 @@
       <!-- place project specific Javascript in this file -->
       
       <script src="{% static 'js/project.js' %}"></script>
+      {% render_bundle 'main' %}
       
 
     {% endblock javascript %}
